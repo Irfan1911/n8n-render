@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
+    envVars:
+      - key: N8N_BASIC_AUTH_USER
+        value: Irfan1911
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: Muhdirfan2006@
+      - key: N8N_PORT
+        value: 5678
